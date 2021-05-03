@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="Slack Users" language="en" table="x_jarodm_slack_ext_user">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Slack Users</label>
+            <language>en</language>
+            <name>x_jarodm_slack_ext_user</name>
+            <plural>Slack Users</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>jarod.mundt</sys_created_by>
+            <sys_created_on>2020-03-07 17:59:19</sys_created_on>
+            <sys_id>7dc1539fdb9b001019ced9595e961988</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Slack Users</sys_name>
+            <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+            <sys_update_name>sys_documentation_x_jarodm_slack_ext_user__en</sys_update_name>
+            <sys_updated_by>jarod.mundt</sys_updated_by>
+            <sys_updated_on>2020-03-07 17:59:19</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

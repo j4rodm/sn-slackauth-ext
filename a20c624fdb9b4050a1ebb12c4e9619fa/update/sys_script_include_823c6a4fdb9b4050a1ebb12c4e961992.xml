@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_jarodm_slack_ext.SlackSSOExtension</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Slack SSO Extension</description>
+        <name>SlackSSOExtension</name>
+        <script><![CDATA[var SlackSSOExtension = Class.create();
+SlackSSOExtension.prototype = {
+	initialize: function() {
+
+	},
+
+	getInstanceFQDN: function(){
+
+		var instanceCustomURL = gs.getProperty('x_jarodm_slack_ext.fqdn');
+		if(!instanceCustomURL){
+			instanceCustomURL = gs.getProperty('instance_name') + '.service-now.com'; 
+		}
+
+		return instanceCustomURL;
+
+	},
+
+	getTokenURL: function(){
+
+		var apiServer = gs.getProperty('x_jarodm_slack_ext.relay.server');
+		var apiEndpoint = gs.getProperty('x_jarodm_slack_ext.relay.endpoint');
+		var tokenURL = 'https://' + apiServer + apiEndpoint + '/slack_token';
+
+		return tokenURL;
+
+	},
+
+	getRelayAuthURL: function(){
+
+		var apiServer = gs.getProperty('x_jarodm_slack_ext.relay.server');
+		var apiEndpoint = gs.getProperty('x_jarodm_slack_ext.relay.endpoint');
+		var relayAuthURL = 'https://' + apiServer + apiEndpoint + '/process';
+
+		return relayAuthURL;
+
+	},
+
+
+	getRedirURL: function(){
+
+		var instanceCustomURL = gs.getProperty('x_jarodm_slacksso.fqdn');
+		if(!instanceCustomURL){
+			instanceCustomURL = gs.getProperty('instance_name') + '.service-now.com'; 
+		}
+
+		var redirEndpoint = gs.getProperty('x_jarodm_slacksso.redir_endpoint');
+		var redirURL = 'https://' + instanceCustomURL + redirEndpoint;
+
+		return redirURL;
+
+	},
+
+
+	applyRolesToUser: function(userID){
+
+		var roleList = gs.getProperty('x_jarodm_slack_ext.default_user_roles');
+		var roleArr = roleList.split(',');
+
+
+		for (var i=0; i< roleArr.length; i++) {
+			var roleLink = new GlideRecord('sys_user_has_role');
+			roleLink.addQuery('state','active');
+			roleLink.addQuery('user',userID);
+			roleLink.addQuery('role',roleArr[i]);
+			roleLink.query();
+			if(roleLink.next()){
+
+				gs.debug('user already has role');
+
+			}else{
+
+				roleLink.initialize();
+				roleLink.user = userID;
+				roleLink.role = roleArr[i];
+				roleLink.state = 'active';
+				roleLink.insert();
+
+			}
+
+		}
+
+	},
+
+	obfuscateLayer: function(textString) {
+
+		//Add a minimal layer of obfuscation during the redirect
+		if (!textString && typeof textString != 'string') {
+			return '';
+		}
+
+		var outputString = '';
+
+		for (var i=0; i<textString.length; i++) {
+			outputString += '%' + parseInt(textString.charCodeAt(i)).toString(16);
+		}
+
+		return outputString;
+
+	},
+
+
+	type: 'SlackSSOExtension'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>jarod.mundt</sys_created_by>
+        <sys_created_on>2020-03-06 20:36:44</sys_created_on>
+        <sys_id>823c6a4fdb9b4050a1ebb12c4e961992</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>SlackSSOExtension</sys_name>
+        <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+        <sys_update_name>sys_script_include_823c6a4fdb9b4050a1ebb12c4e961992</sys_update_name>
+        <sys_updated_by>jarod.mundt</sys_updated_by>
+        <sys_updated_on>2020-03-08 16:47:43</sys_updated_on>
+    </sys_script_include>
+</record_update>

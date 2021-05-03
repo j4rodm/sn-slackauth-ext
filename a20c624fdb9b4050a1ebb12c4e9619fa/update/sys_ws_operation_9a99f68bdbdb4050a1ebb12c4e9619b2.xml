@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>1,3 - Authentication redirect</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+
+	var ssext = new SlackSSOExtension();
+
+	//Get Client ID from Relay
+
+	var extensionID = gs.getProperty('x_jarodm_slack_ext.relay.extension_id');
+	var extensionToken = gs.getProperty('x_jarodm_slack_ext.relay.extension_token');
+
+	var tokenURL = ssext.getTokenURL();
+
+
+	var restMessage = new sn_ws.RESTMessageV2();
+	restMessage.setEndpoint(tokenURL);
+	restMessage.setHttpMethod('get');
+	restMessage.setQueryParameter('extension_id',extensionID);
+	restMessage.setQueryParameter('extension_token',extensionToken);
+	var logLevel = gs.getProperty('x_jarodm_slack_ext.log_level.rest','basic');
+	restMessage.setLogLevel(logLevel);
+
+	var slackRes = restMessage.execute();
+	var httpStatus = slackRes.getStatusCode();
+	var httpHeader = slackRes.getHeaders();
+	var responseBody = slackRes.getBody();
+	var responseErr = slackRes.getErrorMessage();
+
+
+	var successfullyGotSlackID = false;
+	var slackClientID = '';
+	var relayRedirURL = '';
+
+	if(httpStatus == 200){
+
+		if(responseBody.startsWith("<html>")){
+			//PDI Check
+			gs.warn('Got 200 but also raw html. Likely PDI is sleeping');
+			return new sn_ws_err.NotFoundError('Remote Slack SSO Proxy Offline. Please contact the instance administrator.');
+		}
+		
+		var relayBodyObj = JSON.parse(responseBody);
+
+		// {
+		//     "result": {
+		//         "name": "Finite Lab",
+		//         "instance": "https://finitepartnersdemo3.service-now.com/",
+		//         "slack_name": "SNDevs",
+		//         "slack_client_id": "14078448372.325122834002",
+		//         "slack_id": "T0E2AD6AY"
+		//     }
+		// }
+
+		slackClientID = relayBodyObj.result.slack_client_id;
+		relayRedirURL = relayBodyObj.result.relay_redir_url;
+
+		successfullyGotSlackID = true;
+
+	}
+
+
+	var writer = response.getStreamWriter();
+
+
+	if(successfullyGotSlackID){
+
+		//var stateCode = GlideSecureRandomUtil.getSecureRandomString(22); 
+		//var slackClientID = gs.getProperty('x_jarodm_slacksso.slack.client_id');
+
+		// 		var instanceCustomURL = gs.getProperty('x_jarodm_slack_ext.fqdn');
+		// 		if(!instanceCustomURL){
+		// 			instanceCustomURL = gs.getProperty('instance_name') + '.service-now.com'; 
+		// 		}
+
+		// 		var redirEndpoint = gs.getProperty('x_jarodm_slack_ext.redir_endpoint');
+		// 		var redirURL = 'https://' + instanceCustomURL + redirEndpoint;
+
+		var url = 'https://slack.com/oauth/authorize?scope=identity.basic,identity.email,identity.team,identity.avatar&client_id='+slackClientID+'&state='+extensionID+'&redirect_uri='+relayRedirURL;
+
+		response.setHeader('J-Debug','Good Att');
+		response.setHeader('Location',url);
+		response.setStatus(302);
+		response.setContentType('text/plain');
+		writer.writeString('Success... Redirecting to Slack OAuth login page...');
+
+
+	}else{
+
+		response.setHeader('J-Debug','Fail');
+		//response.setHeader('Location',url);
+		response.setStatus(500);
+		response.setContentType('text/plain');
+		writer.writeString('Error getting Slack Client ID');
+
+	}
+
+
+
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/x_jarodm_slack_ext/auth/login</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/login</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>false</requires_authentication>
+        <requires_snc_internal_role>false</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>jarod.mundt</sys_created_by>
+        <sys_created_on>2020-03-06 21:41:36</sys_created_on>
+        <sys_id>9a99f68bdbdb4050a1ebb12c4e9619b2</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>1,3 - Authentication redirect</sys_name>
+        <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+        <sys_update_name>sys_ws_operation_9a99f68bdbdb4050a1ebb12c4e9619b2</sys_update_name>
+        <sys_updated_by>jarod</sys_updated_by>
+        <sys_updated_on>2021-04-14 03:30:50</sys_updated_on>
+        <web_service_definition display_value="Slack Extension SSO Authentication">6879768bdbdb4050a1ebb12c4e961935</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+</record_update>

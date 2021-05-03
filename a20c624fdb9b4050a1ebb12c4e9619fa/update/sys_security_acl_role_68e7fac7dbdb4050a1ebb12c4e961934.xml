@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>jarod.mundt</sys_created_by>
+        <sys_created_on>2020-03-06 21:27:41</sys_created_on>
+        <sys_id>68e7fac7dbdb4050a1ebb12c4e961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_jarodm_slack_ext_configuration.x_jarodm_slack_ext.manager</sys_name>
+        <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+        <sys_security_acl display_value="x_jarodm_slack_ext_configuration">e8e7fac7dbdb4050a1ebb12c4e961931</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_68e7fac7dbdb4050a1ebb12c4e961934</sys_update_name>
+        <sys_updated_by>jarod.mundt</sys_updated_by>
+        <sys_updated_on>2020-03-06 21:27:41</sys_updated_on>
+        <sys_user_role display_value="x_jarodm_slack_ext.manager" name="x_jarodm_slack_ext.manager">761ce64fdb9b4050a1ebb12c4e96194b</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

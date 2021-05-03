@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Slack SSO Extension">013c6a4fdb9b4050a1ebb12c4e96192f</category>
+        <order>200</order>
+        <property display_value="x_jarodm_slack_ext.relay.extension_token" name="x_jarodm_slack_ext.relay.extension_token">dfd0d78fdb1f4050a1ebb12c4e9619c0</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>jarod.mundt</sys_created_by>
+        <sys_created_on>2020-03-06 23:17:18</sys_created_on>
+        <sys_id>06f05f8fdb1f4050a1ebb12c4e961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_jarodm_slack_ext.relay.extension_token.Slack SSO Extension</sys_name>
+        <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_06f05f8fdb1f4050a1ebb12c4e961981</sys_update_name>
+        <sys_updated_by>jarod.mundt</sys_updated_by>
+        <sys_updated_on>2020-03-06 23:17:18</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
