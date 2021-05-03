@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_jarodm_slack_ext_configuration">
+    <x_jarodm_slack_ext_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Slack Extension to SNDevs Relay</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="">95bcaf70dba28050a1ebb12c4e961919</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2020-03-06 21:38:54</run_start>
+        <run_time>1970-01-01 07:00:00</run_time>
+        <run_type>daily</run_type>
+        <script/>
+        <sys_class_name>x_jarodm_slack_ext_configuration</sys_class_name>
+        <sys_created_by>jarod.mundt</sys_created_by>
+        <sys_created_on>2020-03-06 21:39:29</sys_created_on>
+        <sys_id>207a36cbdbdb4050a1ebb12c4e961953</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Slack Extension to SNDevs Relay</sys_name>
+        <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+        <sys_update_name>x_jarodm_slack_ext_configuration_207a36cbdbdb4050a1ebb12c4e961953</sys_update_name>
+        <sys_updated_by>jarod.mundt</sys_updated_by>
+        <sys_updated_on>2020-03-06 21:39:29</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </x_jarodm_slack_ext_configuration>
+</record_update>

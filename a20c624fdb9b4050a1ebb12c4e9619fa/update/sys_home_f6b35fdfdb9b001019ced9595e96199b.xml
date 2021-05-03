@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_home">
+    <sys_home action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <language>en</language>
+        <order>7</order>
+        <published>2020-03-07</published>
+        <short_description>Login with Slack Account</short_description>
+        <sys_class_name>sys_home</sys_class_name>
+        <sys_created_by>jarod.mundt</sys_created_by>
+        <sys_created_on>2020-03-07 18:09:36</sys_created_on>
+        <sys_id>f6b35fdfdb9b001019ced9595e96199b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Login with Slack Account</sys_name>
+        <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+        <sys_update_name>sys_home_f6b35fdfdb9b001019ced9595e96199b</sys_update_name>
+        <sys_updated_by>jarod.mundt</sys_updated_by>
+        <sys_updated_on>2020-03-07 18:09:36</sys_updated_on>
+        <text><![CDATA[<p><span style="font-size: 12pt;">Login with your SNDevs Slack Account</span>:</p>
+<p><a href="/api/x_jarodm_slack_ext/auth/login" target="_top" rel="noopener noreferrer nofollow"><img src="slack-extension-sso.png" alt="Sign In Button" width="172" height="40" /></a></p>
+<p> </p>
+<p> </p>]]></text>
+    </sys_home>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices>basic,elevated,all</choices>
+        <description>Log level for outbound API calls</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_jarodm_slack_ext.log_level.rest</name>
+        <read_roles/>
+        <suffix>log_level.rest</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>jarod.mundt</sys_created_by>
+        <sys_created_on>2020-03-06 20:36:40</sys_created_on>
+        <sys_id>cd3c6a4fdb9b4050a1ebb12c4e961932</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>x_jarodm_slack_ext.log_level.rest</sys_name>
+        <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+        <sys_update_name>sys_properties_cd3c6a4fdb9b4050a1ebb12c4e961932</sys_update_name>
+        <sys_updated_by>jarod</sys_updated_by>
+        <sys_updated_on>2021-05-02 16:58:12</sys_updated_on>
+        <type>choicelist</type>
+        <value>basic</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=cd3c6a4fdb9b4050a1ebb12c4e961932"/>
+</record_update>

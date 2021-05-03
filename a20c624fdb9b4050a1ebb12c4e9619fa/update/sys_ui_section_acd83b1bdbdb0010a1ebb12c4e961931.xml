@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="acd83b1bdbdb0010a1ebb12c4e961931" sys_domain="global" table="x_jarodm_slack_ext_user" version="3" view="ess">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>first_name</element>
+            <position>0</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>28d87b1bdbdb0010a1ebb12c4e96192d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_name</element>
+            <position>1</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>20d87b1bdbdb0010a1ebb12c4e96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone</element>
+            <position>2</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>a0d87b1bdbdb0010a1ebb12c4e96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mobile_phone</element>
+            <position>3</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>24d87b1bdbdb0010a1ebb12c4e96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>title</element>
+            <position>4</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>a4d87b1bdbdb0010a1ebb12c4e96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>28d87b1bdbdb0010a1ebb12c4e96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>6</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>a8d87b1bdbdb0010a1ebb12c4e96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>notification</element>
+            <position>7</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>2cd87b1bdbdb0010a1ebb12c4e96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_format</element>
+            <position>8</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>acd87b1bdbdb0010a1ebb12c4e96192e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_zone</element>
+            <position>9</position>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_id>20d87b1bdbdb0010a1ebb12c4e96192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_jarodm_slack_ext_user" sys_domain="global" view="472a20702f001010ff03b6a62799b674">acd83b1bdbdb0010a1ebb12c4e961931</sys_ui_section>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_jarodm_slack_ext_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>U1V1NGP0S</sys_created_by>
+            <sys_created_on>2020-03-07 20:49:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>acd83b1bdbdb0010a1ebb12c4e961931</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_jarodm_slack_ext_user</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
+            <sys_update_name>sys_ui_section_acd83b1bdbdb0010a1ebb12c4e961931</sys_update_name>
+            <sys_updated_by>U1V1NGP0S</sys_updated_by>
+            <sys_updated_on>2020-03-07 20:49:53</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Self Service" name="ess">472a20702f001010ff03b6a62799b674</view>
+            <view_name>ess</view_name>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
