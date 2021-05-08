@@ -28,15 +28,15 @@
         <sys_created_by>jarod.mundt</sys_created_by>
         <sys_created_on>2020-03-06 20:35:57</sys_created_on>
         <sys_id>a20c624fdb9b4050a1ebb12c4e9619fa</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_updated_by>jarod</sys_updated_by>
-        <sys_updated_on>2021-04-14 03:32:27</sys_updated_on>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-08 14:34:20</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
         <user_role display_value="x_jarodm_slack_ext.manager" name="x_jarodm_slack_ext.manager">761ce64fdb9b4050a1ebb12c4e96194b</user_role>
         <vendor/>
         <vendor_prefix/>
-        <version>0.8.9</version>
+        <version>1.0.0</version>
     </sys_app>
 </record_update>
