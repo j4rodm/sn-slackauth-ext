@@ -5,17 +5,17 @@
         <sys_created_by>jarod.mundt</sys_created_by>
         <sys_created_on>2020-03-06 20:36:40</sys_created_on>
         <sys_id>013c6a4fdb9b4050a1ebb12c4e96192f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Slack SSO Extension</sys_name>
         <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
         <sys_update_name>sys_properties_category_013c6a4fdb9b4050a1ebb12c4e96192f</sys_update_name>
-        <sys_updated_by>jarod.mundt</sys_updated_by>
-        <sys_updated_on>2020-03-07 03:52:56</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-08 14:33:35</sys_updated_on>
         <title><![CDATA[<p><strong><span style="font-size: 12pt;">Slack SSO Extension</span></strong></p>
-<p><span style="font-size: 10pt;">More Info: GitHub URL</span><br /><span style="font-size: 10pt;">Support: SNDevs Slack Channel #something</span></p>
-<p> </p>]]></title>
+<p><span style="font-size: 10pt;">More Info: <a href="https://github.com/j4rodm/sn-slackauth-ext" rel="nofollow">https://github.com/j4rodm/sn-slackauth-ext</a></span><br /><span style="font-size: 10pt;">Support: <a title="SNDevs Slack" href="https://sndevs.com" target="_blank" rel="noopener noreferrer nofollow">SNDevs Slack</a> Channel #sndevs_sso_dev</span></p>
+<p><br /></p>]]></title>
     </sys_properties_category>
     <sys_translated_text action="delete_multiple" query="documentkey=013c6a4fdb9b4050a1ebb12c4e96192f"/>
 </record_update>

@@ -11,16 +11,16 @@
         <sys_created_by>jarod.mundt</sys_created_by>
         <sys_created_on>2020-03-06 23:16:29</sys_created_on>
         <sys_id>0190938fdb1f4050a1ebb12c4e9619c8</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>x_jarodm_slack_ext.relay.extension_id</sys_name>
         <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
         <sys_policy/>
         <sys_scope display_value="Slack SSO Extension">a20c624fdb9b4050a1ebb12c4e9619fa</sys_scope>
         <sys_update_name>sys_properties_0190938fdb1f4050a1ebb12c4e9619c8</sys_update_name>
-        <sys_updated_by>jarod</sys_updated_by>
-        <sys_updated_on>2020-05-07 21:30:16</sys_updated_on>
+        <sys_updated_by>j4rodm</sys_updated_by>
+        <sys_updated_on>2021-05-07 19:34:30</sys_updated_on>
         <type>string</type>
-        <value>bX283RLHmV5rA9US</value>
+        <value>UPDATEME</value>
         <write_roles>x_jarodm_slack_ext.manager</write_roles>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=0190938fdb1f4050a1ebb12c4e9619c8"/>
