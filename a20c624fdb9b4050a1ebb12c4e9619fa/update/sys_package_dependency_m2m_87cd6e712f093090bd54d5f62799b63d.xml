@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
     <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
-        <dependency display_value="Service Management Basics" source="com.snc.service">0aae20b82fc01010ff03b6a62799b601</dependency>
+        <dependency display_value="Text Index" source="com.glide.text_index">55b02ea62f221010bd54d5f62799b667</dependency>
         <min_version>1.0.0</min_version>
-        <sys_created_by>jarod</sys_created_by>
-        <sys_created_on>2020-05-07 21:25:26</sys_created_on>
-        <sys_id>98911d530737a01000c9f26d7c1ed07e</sys_id>
+        <sys_created_by>jarod.mundt</sys_created_by>
+        <sys_created_on>2020-03-06 21:27:42</sys_created_on>
+        <sys_id>87cd6e712f093090bd54d5f62799b63d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_package display_value="Slack SSO Extension" source="x_jarodm_slack_ext">a20c624fdb9b4050a1ebb12c4e9619fa</sys_package>
-        <sys_updated_by>jarod</sys_updated_by>
-        <sys_updated_on>2020-05-07 21:25:26</sys_updated_on>
+        <sys_updated_by>jarod.mundt</sys_updated_by>
+        <sys_updated_on>2020-03-06 21:27:42</sys_updated_on>
     </sys_package_dependency_m2m>
 </record_update>

@@ -4,7 +4,6 @@
         <can_delegate>true</can_delegate>
         <description>Can fully configure this app</description>
         <elevated_privilege>false</elevated_privilege>
-        <encryption_context/>
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_jarodm_slack_ext.manager</name>
