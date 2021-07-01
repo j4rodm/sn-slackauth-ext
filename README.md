@@ -32,7 +32,7 @@ to get this working.  To get those go to https://sndevs.slack.com in channel #sn
 *FQDN** is always the URL without the protocol.  e.g. (example.com, not https://example.com)
 ## Demo
 
-![](/sso-slack.gif)
+![](/slack-sso.gif)
   
 ## Authors
 
