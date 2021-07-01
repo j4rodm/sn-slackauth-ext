@@ -1,24 +1,41 @@
-## Summary
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+# ServiceNow SlackAuth proxy
+
+This project is to allow the folks from 
+https://sndevs.slack.com to authenticate 
+with their Slack account.
 
 
-## Quick Start
+## Installation 
 
-* Prerequsites: _none_
+Either download the update set XML file from the [ServiceNow Share](https://developer.servicenow.com/connect.do#!/share/contents/1627055_slack_sso_extension?v=1&t=PRODUCT_DETAILS)
+or [fork this repo](https://github.com/j4rodm/sn-slackauth-ext) and [install it in Studio](https://docs.servicenow.com/bundle/quebec-application-development/page/build/applications/task/t_ImportAppFromSourceControl.html)
 
-1. Download and install update set from [ServiceNow Share](https://developer.servicenow.com/connect.do#!/share/contents/1627055_libra_toolkit)
-2. Explore features
-3. Please return to the Share page and review 
+### Setting the System Properties
 
-![Alt](docs/img/left-bar-application.png "Libra Left Bar")
+You'll need to set `x_jarodm_slack_ext.relay.extension_id` and `x_jarodm_slack_ext.relay.extension_token`
+to get this working.  To get those go to https://sndevs.slack.com in channel #sndevs_sso_dev and ask for them.
 
-### Feature One
-TBD
 
-## Contribute
-Submit enhancements/defects via this repo's [Issues](../../issues)
+| Property | Value | Notes |
+| --- | --- | --- |
+| x_jarodm_slack_ext.relay.extension_id    |                                      | Ask for in #slack_sso_extension         |
+| x_jarodm_slack_ext.relay.extension_token |                                      | Ask for in #slack_sso_extension         |
+| x_jarodm_slack_ext.fqdn                  |                                      | If using custom domain, give FQDN*.     |
+| x_jarodm_slack_ext.logging.verbosity     | warn                                 | Log level for local logging	            |
+| x_jarodm_slack_ext.log_level.rest	       | basic                                | Log level for outbound API calls.       |	
+| x_jarodm_slack_ext.relay.server          | dev56843.service-now.com             | FQDN* of Relay Instance.                |
+| x_jarodm_slack_ext.default_user_roles    |                                      | Sysid(s) of roles assigned to new users |	
+| x_jarodm_slack_ext.redir_endpoint        | /api/x_jarodm_slack_ext/auth/process | API Endpoint to process auth            |	
+| x_jarodm_slack_ext.relay.endpoint        | /api/x_jarodm_slacksso/relay         | API Endpoint of Relay Instance          |
 
-## Credit
-[Jarod Mundt](https://github.com/j4rodm)
+*FQDN** is always the URL without the protocol.  e.g. (example.com, not https://example.com)
+## Demo
+
+Insert gif or link to demo
+
+[![https://github.com/]](asdf)
+  
+## Authors
+
+- [@j4rodm](https://www.github.com/j4rodm)
